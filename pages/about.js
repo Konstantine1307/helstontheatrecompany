@@ -24,11 +24,11 @@ function About() {
         button="Discover The Group"
         linkToPage="#thegroup"
       />
-      <div className="container pt-3  flex justify-end">
+      <div className="container pt-3 flex justify-end">
         <GoBackButton />
       </div>
-      <div className="container mx-auto px-4  md:mt-12">
-        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+      <div className="container px-4 pt-4  md:mt-12">
+        <div className="flex flex-col space-y-8 pb-8 md:pb-0 md:flex-row md:space-y-0 md:space-x-6">
           <CardDown
             backImage='url("/card-background1.webp")'
             titleCard="awards"

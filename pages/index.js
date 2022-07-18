@@ -3,7 +3,6 @@ import Hero from "../components/hero";
 import tiobe from '/public/TIOBEhomepage.webp'
 import TheGroup from "./theGroup"
 import CardDown from "../components/customcards/cardDown";
-// import CardUp from "../components/customcards/cardUp";
 import Welcome from "../components/welcome";
 
 
@@ -24,7 +23,7 @@ function Index() {
         linkToPage="/tiobe"
       />
       <div className="container  px-4 pt-4 md:mt-12">
-        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+        <div className="flex flex-col space-y-8 pb-8 md:pb-0 md:flex-row md:space-y-0 md:space-x-6">
           <CardDown
             backImage='url("/card-background1.webp")'
             titleCard="3+ Shows/year"

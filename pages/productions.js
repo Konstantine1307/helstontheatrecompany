@@ -7,8 +7,6 @@ import CardUp from "../components/customcards/cardUp";
 import CardDown from "../components/customcards/cardDown";
 
 
-
-
 function Productions() {
   return (
     <>
@@ -27,9 +25,9 @@ function Productions() {
       <div className="container pt-3 flex justify-end">
         <GoBackButton />
       </div>
-      <div className="container mx-auto px-4 md:mt-12 mb-32">
-        <h2 className="h2-brand mb-16">Future Productions</h2>
-        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+      <div className="container  px-4 pt-4 md:mt-12 mb-12">
+        <h2 className="h2-brand mb-8 md:mb-16">Future Productions</h2>
+        <div className="flex flex-col space-y-8 pb-8 md:pb-0 md:flex-row md:space-y-0 md:space-x-6">
           <CardDown
             backImage='url("/JATBshowpage-small.webp")'
             titleCard="Jack & The Beanstalk"
@@ -54,9 +52,9 @@ function Productions() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:mt-12">
-        <h2 className="h2-brand mb-16">Recent Productions</h2>
-        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+      <div className="container px-4 pt-4 md:mt-12">
+        <h2 className="h2-brand mb-8 md:mb-16">Recent Productions</h2>
+        <div className="flex flex-col space-y-8 pb-8 md:pb-0 md:flex-row md:space-y-0 md:space-x-6">
           <CardUp
             backImage='url("/TWSshowpage-small.webp")'
             titleCard="the wedding singer"
