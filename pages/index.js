@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import tiobe from '/public/TIOBEhomepage.webp'
-import TheGroup from "./theGroup"
+
 import CardDown from "../components/customcards/cardDown";
 import Welcome from "../components/welcome";
 
@@ -14,6 +14,7 @@ function Index() {
         paragraph="From Pantomimes to Musicals and Plays,
         we aim to perform amazing theatre with the support and participation
         of our community. It's where the community is."
+        paragraph2="Check out the next productions including our summer play, The Importance of Being Earnest, Jack and The Beansktalk in January 2023, Sweeney Todd in April 2023 and Evita in September 2023 at the Minack Theatre."
         imageSrc={tiobe}
         width={488}
         height={690}
@@ -22,7 +23,34 @@ function Index() {
         button="Next Production"
         linkToPage="/tiobe"
       />
-      <div className="container  px-4 pt-4 md:mt-12">
+
+      <div className="container  px-4 pt-4 md:mt-12 mb-12">
+        <h2 className="h2-brand mb-8 md:mb-16">Upcoming Productions</h2>
+        <div className="flex flex-col space-y-8 pb-8 md:pb-0 md:flex-row md:space-y-0 md:space-x-6">
+          <CardDown
+            backImage='url("/JATBshowpage-small.webp")'
+            titleCard="Jack & The Beanstalk"
+            paragraph2="25 - 29 January 2023"
+            anchor="/jackAndTheBeanstalk"
+            buttonCard="Find out more"
+          />
+          <CardDown
+            backImage='url("/SToddshowpage.webp")'
+            titleCard="Sweeney Todd"
+            paragraph2="23 - 29 April 2023"
+            anchor="/sweeneyTodd"
+            buttonCard="Find out more"
+          />
+          <CardDown
+            backImage='url("/Evitashowpage.webp")'
+            titleCard="Evita"
+            paragraph2="September 2023"
+            anchor="/evita"
+            buttonCard="Find Out More"
+          />
+        </div>
+      </div>
+      {/* <div className="container  px-4 pt-4 md:mt-12">
         <div className="flex flex-col space-y-8 pb-8 md:pb-0 md:flex-row md:space-y-0 md:space-x-6">
           <CardDown
             backImage='url("/card-background1.webp")'
@@ -46,7 +74,7 @@ function Index() {
             buttonCard="Find out more"
           />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
@@ -56,7 +84,7 @@ Index.getLayout = function getLayout(page) {
   return (
     <Layout>
       {page}
-      <TheGroup />
+     
       <Welcome />
      
     </Layout>

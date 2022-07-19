@@ -88,8 +88,8 @@ function JackAndTheBeanStalk() {
         title="Jack And The Beanstalk"
         paragraph="Epworth Centre - 25 to 29 January 2023"
         imageSrc="/JATBshowpage.webp"
-        width={1688}
-        height={1160}
+        width={2048}
+        height={1152}
         alt="Jack And The Beanstalk at The Epworth Centre January 2023"
         button="News and information"
         linkToPage="#show-description"

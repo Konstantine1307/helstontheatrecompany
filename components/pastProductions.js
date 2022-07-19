@@ -1,5 +1,5 @@
 
-
+import Link from "next/link";
 
 
 const ProductionsData = () => {
@@ -8,10 +8,10 @@ const ProductionsData = () => {
       category: "2021",
       color: "#5737f5",
       text: "Tell Me On a Sunday",
-      link: 'url("https://www.facebook.com/media/set/?vanity=HelstonTheatreCompany&set=a.4240090692742336")',
+      link: "https://www.facebook.com/media/set/?vanity=HelstonTheatreCompany&set=a.4240090692742336",
       text2: "James and the Giant Peach",
       link2:
-        "https://www.facebook.com/media/set/?vanity=HelstonTheatreCompany&set=a.4240080592743346",
+"https://www.facebook.com/media/set/?vanity=HelstonTheatreCompany&set=a.4240080592743346",
       text3: "Movies 2 Musicals",
       link3: "https://www.facebook.com/HelstonTheatreCompany/photos/",
     },
@@ -150,9 +150,9 @@ const ProductionsData = () => {
         <h2 className="h2-brand my-20">
          Past Productions
         </h2>
-        <div className="container">
+        <div className="max-w-8xl">
           <p className="text-2xl text-center text-white pb-6 shadow-xl">Visit our production photo albums</p>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <ProductionCards data={projects_data} />
           </div>
         </div>
@@ -161,64 +161,61 @@ const ProductionsData = () => {
   );
 };
 
-
-
 const ProductionCards = ({ data }) => {
   return (
     <>
       {data.map((props, i) => (
-        <div className=" " key={i}>
+        <div key={i}>
           <div
-            className="group h-full rounded-md p-2 flex flex-col md:bg-gradient-to-b md:hover:from-pink-500 md:hover:to-cyan-500 md:hover:scale-105 md:hover:text-black duration-300 "
+            className="group h-full rounded-md px-1  flex flex-col space-y-4 md:bg-gradient-to-b md:hover:from-pink-500 md:hover:to-cyan-500 md:hover:scale-105 md:hover:text-black duration-300 transition-all "
             style={{ backgroundColor: `${props.color}da` }}
           >
-            <div className="text-3xl mb-6 text-center  text-white shadow-xl shadow-cyan-800 group-hover:text-black duration-150 ">
+            <div className="text-3xl h-16 pt-4 mb-6 text-center text-white shadow-lg shadow-current md:group-hover:text-black duration-150 ">
               {props.category}
             </div>
-            <a
-              href={props.link}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-6 text-lg text-center"
-            >
-              {props.text}
-            </a>
-     
-            <a
-              href={props.link2}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-6 font-semibold text-center"
-            >
-              {props.text2}
-            </a>
-          
-            <a
-              href={props.link3}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-6 font-semibold text-center"
-            >
-              {props.text3}
-            </a>
-        
-            <a
-              href={props.link4}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-6 font-semibold text-center"
-            >
-              {props.text4}
-            </a>
-         
-            <a
-              href={props.link5}
-              target="_blank"
-              rel="noreferrer"
-              className="underline mb-6 font-semibold text-center"
-            >
-              {props.text5}
-            </a>
+            <div className="flex flex-col space-y-4 pl-4 pb-4 font-mono underline">
+              <Link href={`${props.link}`} passHref>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {props.text}
+                </a>
+              </Link>
+              <Link href={`${props.link2}`} passHref>
+                <a
+                  target="_blank"
+                  rel="noreferrer"               
+                >
+                  {props.text2}
+                </a>
+              </Link>
+              <Link href={`${props.link3}`} passHref>
+                <a
+                  target="_blank"
+                  rel="noreferrer"           
+                >
+                  {props.text3}
+                </a>
+              </Link>
+              <Link href={`${props.link4}`} passHref>
+                <a
+                  target="_blank"
+                  rel="noreferrer"               
+                >
+                  {props.text4}
+                </a>
+              </Link>
+              <Link href={`${props.link5}`} passHref>
+                <a
+                  target="_blank"
+                  rel="noreferrer"              
+                >
+                  {props.text5}
+                </a>
+              </Link>
+            </div>
+
           </div>
         </div>
       ))}

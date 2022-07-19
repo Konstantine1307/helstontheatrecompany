@@ -87,8 +87,8 @@ function SweeneyTodd() {
         title="Sweeney Todd"
         paragraph="Epworth Centre - 23 to 29 April 2023"
         imageSrc="/SToddshowpage.webp"
-        width={1688}
-        height={1160}
+        width={500}
+        height={500}
         alt="Sweeney Todd at The Epworth Centre April 2023"
         button="News and information"
         linkToPage="#show-description"

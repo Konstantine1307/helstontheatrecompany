@@ -22,7 +22,7 @@ function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, width, heig
             />
           </div>
 
-          {/* Textt Content */}
+          {/* Text Content */}
           <div className="max-w-md lg:max-w-2xl px-10 pb-5 md:pr-4 text-center md:motion-safe:animate-fadeIn duration-500 space-y-4 md:space-y-8">
             <h1 className="font-heading text-4xl tracking-wider text-white">
               {title}
@@ -30,11 +30,12 @@ function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, width, heig
             <h2 className="text-2xl tracking-wide text-white ">
               {subtitle}
             </h2>
-            <p className="text-md md:text-xl text-white tracking-wide">
+            <p className="text-md md:text-xl text-white tracking-wide pb-6">
               {paragraph}
               <br />
               <br />
               {paragraph2}
+              
             </p>
 
             {/* Button */}

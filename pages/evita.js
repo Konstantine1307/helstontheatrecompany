@@ -87,8 +87,8 @@ function Evita() {
         title="Evita"
         paragraph="Minack Theatre - September 2023"
         imageSrc="/Evitashowpage.webp"
-        width={1688}
-        height={1160}
+        width={600}
+        height={600}
         alt="Evita at the Minack Theatre September 2023"
         button="News and information"
         linkToPage="#show-description"
