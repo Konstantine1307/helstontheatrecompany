@@ -3,7 +3,6 @@ import Hero from "../components/hero";
 import tiobe from "/public/TIOBEhomepage.webp";
 import GoToProductions from "../components/utilities/goToProductionButton";
 import CardDown from "../components/customcards/cardDown";
-import CardUp from "../components/customcards/cardUp";
 import TwoTextCards from "../components/twoTextCards";
 
 function TiobePlay() {
@@ -39,7 +38,7 @@ function TiobePlay() {
               paragraph3="Aug 06, 6.30pm"
               anchor="https://www.bedruthan.com/events/theatre-the-importance-of-being-earnest"
               target="_blank"
-              buttonCard="Find out more"
+              buttonCard="Book here"
             />
             <CardDown
               backImage='url("/TIOBE-coronationpark-helston.webp")'
@@ -49,7 +48,7 @@ function TiobePlay() {
               paragraph3="7.00pm"
               anchor="https://uk.patronbase.com/_CornishRivieraBoxOffice/Productions/HTC4/Performances"
               target="_blank"
-              buttonCard="Find out more"
+              buttonCard="Book here"
             />
             <CardDown
               backImage='url("/TIOBE-penleepark-penzance.webp")'
@@ -59,7 +58,7 @@ function TiobePlay() {
               paragraph3="Aug 09, 2pm & 7.30pm"
               anchor="https://www.penleeparktheatre.com/events/"
               target="_blank"
-              buttonCard="Find out more"
+              buttonCard="Book here"
             />
           </div>
         </div>

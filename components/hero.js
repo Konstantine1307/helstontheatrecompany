@@ -4,7 +4,7 @@ import Link from "next/link";
 import ButtonCard from "./utilities/buttonCard";
 import styles from "./Hero.module.css"
 
-function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, width, height, layout, linkToPage, button,}) {
+function Hero({title, subtitle, subtitle2, paragraph,paragraph2, paragraph3, imageSrc, alt, width, height, layout, linkToPage, button,}) {
 
   return (
     <section className={styles.bgHero}>
@@ -27,15 +27,17 @@ function Hero({title, subtitle, paragraph,paragraph2, imageSrc, alt, width, heig
             <h1 className="font-heading text-4xl tracking-wider text-white">
               {title}
             </h1>
-            <h2 className="text-2xl tracking-wide text-white ">
+            <h2 className="text-xl font-thin tracking-wide text-white ">
               {subtitle}
+              <br />
+              {subtitle2}
             </h2>
             <p className="text-md md:text-xl text-white tracking-wide pb-6">
               {paragraph}
               <br />
-              <br />
-              {paragraph2}
-              
+              <span className="leading-loose">{paragraph2}</span>        
+              <br />  
+              <span className="italic tracking-widest text-2xl leading-loose">{paragraph3}</span>
             </p>
 
             {/* Button */}

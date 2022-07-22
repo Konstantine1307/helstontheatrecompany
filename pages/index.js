@@ -11,16 +11,18 @@ function Index() {
     <>
       <Hero
         title="HELSTON THEATRE COMPANY"
-        paragraph="From Pantomimes to Musicals and Plays,
+        subtitle="From Pantomimes to Musicals and Plays,
         we aim to perform amazing theatre with the support and participation
-        of our community. It's where the community is."
-        paragraph2="Check out the next productions including our summer play, The Importance of Being Earnest, Jack and The Beansktalk in January 2023, Sweeney Todd in April 2023 and Evita in September 2023 at the Minack Theatre."
+        of our community."
+        subtitle2=" It's where the community is."      
+        paragraph2="August 2022:"
+        paragraph3="The Importance Of Being Earnest"
         imageSrc={tiobe}
         width={488}
         height={690}
         layout="intrinsic"
         alt="The Importance of Being Earnest poster for summer 2022 play"
-        button="Next Production"
+        button="Book Now"
         linkToPage="/tiobe"
       />
 
