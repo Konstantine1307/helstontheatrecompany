@@ -18,7 +18,7 @@ function CardDown(props) {
       <div className=" bg-cover  rounded-2xl" style={backImgBackGround}>
         {/* Overlay */}
         <Overlay />
-        <div className="relative rounded-lg bg-gradient-to-b hover:from-pink-500 hover:to-cyan-500 duration-150 transition-all">
+        <div className="relative rounded-lg hover:bg-gradient-to-b hover:from-pink-500 hover:to-cyan-500 duration-150 transition-all">
           <Link href={props.anchor} target={props.target} rel="noreferrer">
             <a
               target={props.target}
