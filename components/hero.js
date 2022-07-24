@@ -11,7 +11,7 @@ function Hero({title, subtitle, subtitle2, paragraph,paragraph2, paragraph3, ima
         <div className="flex flex-col-reverse md:flex-row items-center mx-auto p-6 ">
 
           {/* Image */}
-          <div className="sm:mt-0 md:mt-10 max-w-sm md:max-w-2xl  ">
+          <div className="sm:mt-0 md:mt-10 max-w-sm md:max-w-2xl ">
             <Image
               src={imageSrc}
               alt={alt}

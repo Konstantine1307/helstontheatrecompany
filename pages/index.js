@@ -17,6 +17,8 @@ function Index() {
         paragraph2="August 2022:"
         paragraph3="The Importance Of Being Earnest"
         imageSrc={tiobe}
+        width={488}
+        height={690}
         layout="intrinsic"
         alt="The Importance of Being Earnest poster for summer 2022 play"
         button="Book Now"
