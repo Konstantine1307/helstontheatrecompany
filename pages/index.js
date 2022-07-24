@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import tiobe from '/public/TIOBEhomepage-full-size.webp'
+import tiobe from '/public/TIOBEhomepage.webp'
 import CardDown from "../components/customcards/cardDown";
 import Welcome from "../components/welcome";
 
