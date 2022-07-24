@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import tiobe from '/public/TIOBEhomepage.webp'
-
 import CardDown from "../components/customcards/cardDown";
 import Welcome from "../components/welcome";
 
@@ -14,7 +13,7 @@ function Index() {
         subtitle="From Pantomimes to Musicals and Plays,
         we aim to perform amazing theatre with the support and participation
         of our community."
-        subtitle2=" It's where the community is."      
+        subtitle2=" It's where the community is."
         paragraph2="August 2022:"
         paragraph3="The Importance Of Being Earnest"
         imageSrc={tiobe}
@@ -25,6 +24,8 @@ function Index() {
         button="Book Now"
         linkToPage="/tiobe"
       />
+
+      
 
       <div className="container  px-4 pt-4 md:mt-12 mb-12">
         <h2 className="h2-brand mb-8 md:mb-16">Upcoming Productions</h2>

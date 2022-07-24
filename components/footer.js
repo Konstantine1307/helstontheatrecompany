@@ -9,7 +9,7 @@ function Footer() {
           <Link href="/">
             <div className="w-16">
               <Image
-                src="/htclogo1.svg"
+                src="/HTC-Logo.png"
                 width={400}
                 height={403}
                 alt="Helston Theatre Company Logo"

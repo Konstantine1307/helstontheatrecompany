@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         prima: "#FF5CAF",
         brandBlue: "#374777",
+        brandBlueDark: "#0D121C",
       },
       fontFamily: {
         heading: ["Meriweather", "serif"],
@@ -32,13 +33,13 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
-      }
-    }
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
   },
   plugins: [],
 };

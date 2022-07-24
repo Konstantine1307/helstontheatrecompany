@@ -3,7 +3,8 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -36,17 +37,15 @@ export default function NavigationBar() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-16 w-auto rounded-full"
-                    src="/htclogo1.svg"
+                <div className="flex-shrink-0 flex items-center w-20">
+               
+                  <Image
+                    className="rounded-full"
+                    src="/HTC-Logo.png"
                     alt="HTC Logo"
-                  />
-                  <img
-                    className="hidden lg:block h-20 w-auto rounded-full"
-                    src="/htclogo1.svg"
-                    alt="HTC Logo"
-                  />
+                    width={400}
+                    height={403}
+                  />2
                 </div>
                 <div className="hidden sm:block sm:ml-6 pt-4 md:pl-20">
                   <div className="flex space-x-1 md:space-x-2 ">
