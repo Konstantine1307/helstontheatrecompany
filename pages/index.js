@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Hero from "../components/hero";
-import tiobe from '/public/TIOBEhomepage.webp'
+import tiobe from '/public/TIOBEhomepage-full-size.webp'
 import CardDown from "../components/customcards/cardDown";
 import Welcome from "../components/welcome";
 
@@ -17,8 +17,6 @@ function Index() {
         paragraph2="August 2022:"
         paragraph3="The Importance Of Being Earnest"
         imageSrc={tiobe}
-        width={488}
-        height={690}
         layout="intrinsic"
         alt="The Importance of Being Earnest poster for summer 2022 play"
         button="Book Now"
